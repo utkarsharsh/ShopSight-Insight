@@ -4,7 +4,6 @@ export const scrapData = async (req, res) => {
     if (!url) {
         return res.status(400).json({ message: "URL is required" });
     }
+
     
-
-
 }
