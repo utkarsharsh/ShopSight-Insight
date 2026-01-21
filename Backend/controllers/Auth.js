@@ -44,7 +44,7 @@ export const signup=async(req,res)=>{
 
 export const signin = async (req, res) => {
   const { email, password } = req.body;
-
+  console.log("attempting signin for:", email);
   // 1. Check email & password
   if (!email || !password) {
     return res.status(400).json({ message: "Email & password required" });

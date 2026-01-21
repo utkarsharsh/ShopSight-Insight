@@ -51,7 +51,11 @@ export const scrapeMyntra = async (url) => {
         description.forEach((desc) => {
             descArray.push(desc.innerText);
         }); 
-        return { title, price, images, description: descArray };
+        let y="";
+        descArray.forEach((item)=>{
+            y+=item+" ";
+        })
+        return { title, price, images, description: y };
     });
 
     // Close the browser

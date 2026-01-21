@@ -10,20 +10,17 @@ const productSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  imageUrl: String,
+  imageUrl: [String],
   currentPrice: {
-    type: Number,
-    required: true
-  },
-  currency: {
     type: String,
-    default: "INR"
+    required: true
   },
   source: {
     type: String, // amazon, flipkart etc
     required: true
   },
   productUrl: String,
+  discription: String,
   createdAt: {
     type: Date,
     default: Date.now
