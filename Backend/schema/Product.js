@@ -21,6 +21,10 @@ const productSchema = new mongoose.Schema({
   },
   productUrl: String,
   discription: String,
+   mailSent: {
+    type: Boolean,
+    default: false
+   },
   createdAt: {
     type: Date,
     default: Date.now
